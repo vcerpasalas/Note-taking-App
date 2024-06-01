@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+/* Estilos generales */
+
+* {
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box; /* Tamaño de elemento incluye padding y borde en width */
+}
+
+:root {
+  --color-fondo: #f2f2f2;
+  --color-primario: #000000;
+  --color-texto: #4f4f4f;
+  --color-placeholder: #bdbdbd;
+  --color-fondo-nota: #ffffff;
+  --color-borrar: #e0e0e0;
+}
+
+/* Estilos del body */
+
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-primario);
+}
+
+.titulo-form {
+  font-size: 32px;
+  text-align: center;
+}
+
+.contenedor-form {
+  width: 100%;
+  max-width: 343px;
+  margin: 0 auto; /* Centrado horizontal */
+}
+
+.form-caja {
+  width: 100%;
+  height: 120px;
+  padding: 14px;
+  border-radius: 16px;
+  border: 2px solid var(--color-texto);
+  resize: none; /* Evita redimensión */
+  font-size: 24px;
+  margin-bottom: 10px;  
+}
+
+.form-caja::placeholder {
+  /* Seleccionar pseudo-elementos */
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  color: var(--color-placeholder);
+}
+
+.form-boton {
+  width: 100%;
+  height: 45px;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: 2px solid var(--color-texto);
+  background: linear-gradient(0deg, var(--color-texto), var(--color-texto)),
+    linear-gradient(0deg, var(--color-fondo-nota), var(--color-fondo-nota));
+  font-size: 24px;
+  color: var(--color-fondo-nota);
+  font-weight: 700;
+  line-height: 29px; 
+}
+
+.notas {
+  position: relative; /* Pösicionar Borrar desde su posición habital */
+  width: 100%;
+  background-color: var(--color-fondo-nota);
+  border: 2px solid var(--color-texto);
+  border-radius: 16px;
+  margin: 0 auto;
+  padding: 16px;
+  font-size: 24px;
+  margin-bottom: 15px;
+  padding-bottom: 50px; /* Espacio para texto */
+}
+
+.notas:first-child {
+  margin-top: 15px; /* Margen superior en la 1ra nota */
+}
+
+.boton-borrar {
+  position: absolute; /* Posición precisa del botón dentro de notas */
+  bottom: 12px;
+  right: 12px;
+  width: 83px;
+  height: 30px;
+  padding: 4px 16px;
+  border-radius: 16px;
+  background-color: var(--color-borrar);
+  color: var(--color-texto);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 22px;
+  border: none;
+}

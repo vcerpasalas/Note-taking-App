@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Enlace con CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>App Mis Notas</title>
+    <link
+      rel="icon"
+      href="https://i.postimg.cc/NMJNGvYh/notas.jpg"
+      type="image/png"
+      alt="Icono"
+    />
+  </head>
+
+  <body>
+    <h1 class="titulo-form">Mis notas</h1>
+
+    <div class="contenedor-form">
+      <textarea
+        class="form-caja"
+        rows="5"
+        placeholder="Algo para recordar..."
+      ></textarea>
+      <button class="form-boton">Crear</button>
+
+      <!-- Muestra Notas creadas -->
+      <div id="form-notas" class="form-notas"></div>
+    </div>
+
+    <!-- Enlace con JavaScript -->
+    <script src="app.js"></script>
+  </body>
+</html>
